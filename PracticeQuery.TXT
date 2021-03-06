@@ -1,0 +1,28 @@
+select count(*) from rental
+where return_date >= '2005-07-17';
+
+--Returns count(13) but no such an option in a quiz
+select count(*) from actor
+where last_name like 'A%';
+
+select count(distinct district) from address;
+
+select distinct district from address;
+
+select count(*) from film
+where rating='R'
+and replacement_cost between 5 and 15;
+
+select count(*) from film
+where title like '%Truman%'
+
+select count(city_id) from city
+where country_id between 80 and 90;
+
+select count(city_id) from city
+where country_id=82;
+
+select max(replacement_cost) from film;
+
+select count(*) from film
+where rating in('R','G');
